@@ -53,7 +53,19 @@
         <!-- ====hero==== -->
         <section class="hero-section">
             <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-order">Заказать услугу</button>
+            <button class="hero-order" data-modal-open>Заказать услугу</button>
+
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="cloused" data-modal-close aria-label="Закрыть">
+                        <svg>
+                            <use href="images/icons.svg#icon-Vector"></use>
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+
         </section>
         <!-- ====hero==== -->
         <!-- ====name list==== -->
@@ -112,15 +124,24 @@
         <section class="section-img">
             <div class="conteiner">
                 <h2 class="title-section">Чем мы занимаемся</h2>
-                <ul class="img-box list">
-                    <li>
+                <ul class="img-box">
+                    <li class="img-box-li">
                         <img src="./images/box-1.jpg" width="370" alt="Робота 1">
+                        <div class="img-signature">
+                            <p class="img-signature-title">Десктопные приложения</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="img-box-li">
                         <img src="./images/box-2.jpg" width="370" alt="Робота 2">
+                        <div class="img-signature">
+                            <p class="img-signature-title">Мобильные приложения</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="img-box-li">
                         <img src="./images/box-3.jpg" width="370" alt="Робота 3">
+                        <div class="img-signature">
+                            <p class="img-signature-title">Дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -386,6 +407,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
